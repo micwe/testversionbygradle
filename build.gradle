@@ -1,0 +1,26 @@
+buildscript {
+    repositories {
+        maven {
+            url 'https://plugins.gradle.org/m2/'
+        }
+    }
+    dependencies {
+        classpath 'net.researchgate:gradle-release:2.3.4'
+    }
+}
+
+group 'com.heavenhr'
+version '1.0.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'net.researchgate.release'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
