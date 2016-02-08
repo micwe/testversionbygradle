@@ -28,6 +28,10 @@ task wrapper(type: Wrapper) {
     gradleVersion = '2.8'
 }
 
+uploadArchives {
+    println 'uploading archives'
+}
+
 release {
     failOnCommitNeeded = false
     failOnUnversionedFiles = false
@@ -36,3 +40,5 @@ release {
     tagCommitMessage = '[Release]: creating tag '
     newVersionCommitMessage = '[Release]: new snapshot version '
 }
+
+afterReleaseBuild.dependsOn uploadArchives
