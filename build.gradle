@@ -9,7 +9,7 @@ buildscript {
     }
 }
 
-group 'com.heavenhr'
+group 'de.invidit'
 version '1.0.0-SNAPSHOT'
 
 apply plugin: 'java'
@@ -23,4 +23,9 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+release {
+    failOnCommitNeeded = false
+    failOnUnversionedFiles = false
 }
