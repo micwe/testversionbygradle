@@ -28,4 +28,5 @@ dependencies {
 release {
     failOnCommitNeeded = false
     failOnUnversionedFiles = false
+    failOnUpdateNeeded = false
 }
