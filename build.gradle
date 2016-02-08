@@ -28,4 +28,7 @@ release {
     failOnCommitNeeded = false
     failOnUnversionedFiles = false
     failOnUpdateNeeded = false
+    preTagCommitMessage = '[Release]: '
+    tagCommitMessage = '[Release]: creating tag '
+    newVersionCommitMessage = '[Release]: new snapshot version '
 }
