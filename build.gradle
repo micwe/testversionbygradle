@@ -10,7 +10,6 @@ buildscript {
 }
 
 group 'de.invidit'
-version '1.0.1-SNAPSHOT'
 
 apply plugin: 'java'
 apply plugin: 'net.researchgate.release'
